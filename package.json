@@ -22,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/SpiritUrban/high-level/issues"
   },
-  "homepage": "https://github.com/SpiritUrban/high-level#readme"
+  "homepage": "https://github.com/SpiritUrban/high-level#readme",
+  "dependencies": {
+    "code-line-number": "^1.0.2",
+    "who-called-me": "^1.0.0"
+  }
 }
