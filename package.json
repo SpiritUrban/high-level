@@ -1,0 +1,26 @@
+{
+  "name": "high-level",
+  "version": "1.0.0",
+  "description": "A set of functions for the highest level of programming abstraction",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpiritUrban/high-level.git"
+  },
+  "keywords": [
+    "util",
+    "utility",
+    "utilities",
+    "pure",
+    "toolkit"
+  ],
+  "author": "Vitaliy Dyachuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SpiritUrban/high-level/issues"
+  },
+  "homepage": "https://github.com/SpiritUrban/high-level#readme"
+}
