@@ -24,6 +24,10 @@ class Log {
         l(chalk.gray(`${whoCalledMe(3, 'report')}`));
         return this
     }
+    test(){
+        l('hello');
+        return this
+    }
 }
 
 const log = (...data) => new Log(...data)
