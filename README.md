@@ -12,7 +12,9 @@ $ npm install high-level
 ## Example
 
 ```js
-const { log } = require('high-level');
+import { log } from 'high-level';
+
 log('hello') // => hello
+log('hello').place() // => hello + line of code and path to file
 ```
 

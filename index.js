@@ -1,4 +1,8 @@
 const l = console.log;
+import chalk from 'chalk'; // Doc - https://www.npmjs.com/package/chalk
+// import ln from 'code-line-number';
+import whoCalledMe from 'who-called-me';
+// import whoCalledMe from '../who-called-me/index.js';
 
 class Log {
     data = 'xxx';
@@ -16,13 +20,12 @@ class Log {
         return this
     }
     place() {
-        l('Line: 7; File: C/sdfsdf/sdfsdf/sdfsdf/sdfgsdg/sdfgsdg.js');
+        // l(chalk.gray(`Line: ${ln('report')}. File: ${whoCalledMe('report')}`));
+        l(chalk.gray(`${whoCalledMe(3, 'report')}`));
         return this
     }
 }
 
-const self = {
-    log: (...data) => new Log(...data),
-};
+const log = (...data) => new Log(...data)
 
-module.exports = self;
+export { log };
