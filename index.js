@@ -41,4 +41,4 @@ const randomString = (n = 1) => {
     return string;
 };
 
-export { log };
+export { log, randomString };
