@@ -21,15 +21,24 @@ class Log {
     }
     place() {
         // l(chalk.gray(`Line: ${ln('report')}. File: ${whoCalledMe('report')}`));
-        l(chalk.gray(`${whoCalledMe(3, 'report')}`));
+        l(chalk.gray(`${whoCalledMe(3)}`));
         return this
     }
-    test(){
+    test() {
         l('hello');
         return this
     }
 }
 
 const log = (...data) => new Log(...data)
+
+// Random string with 10 chars by default: 's5xoxqnit4', or longer
+const randomString = (n = 1) => {
+    let string = '';
+    for (let i = 0; i < n; i++) {
+        string += '-' + Math.random().toString(36).substr(2); // remove `0.` 
+    };
+    return string;
+};
 
 export { log };
