@@ -1,6 +1,6 @@
 {
   "name": "high-level",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A set of functions for the highest level of programming abstraction",
   "main": "index.js",
   "scripts": {
@@ -24,7 +24,6 @@
   },
   "homepage": "https://github.com/SpiritUrban/high-level#readme",
   "dependencies": {
-    "chalk": "^5.0.1",
     "code-line-number": "^1.0.3",
     "who-called-me": "^1.0.3"
   },

@@ -1,5 +1,5 @@
 const l = console.log;
-import chalk from 'chalk'; // Doc - https://www.npmjs.com/package/chalk
+// import chalk from 'chalk'; // Doc - https://www.npmjs.com/package/chalk /// !!! Problem with
 // import ln from 'code-line-number';
 import whoCalledMe from 'who-called-me';
 // import whoCalledMe from '../who-called-me/index.js';
@@ -21,7 +21,7 @@ class Log {
     }
     place() {
         // l(chalk.gray(`Line: ${ln('report')}. File: ${whoCalledMe('report')}`));
-        l(chalk.gray(`${whoCalledMe(3)}`));
+        l(whoCalledMe(3));
         return this
     }
     test() {
